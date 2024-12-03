@@ -90,17 +90,71 @@ import MCard from './ui/m-card.vue'
 
 const currentYear = ref(new Date().getFullYear())
 
-const article = ref({
-  title: '如何使用AI编码工具学习新的编程语言',
-  author: '张三',
-  date: '2024年8月7日',
+const article = {
+  title: '打造完美博客：Vue 3 + TailwindCSS + TypeScript 技术栈详解',
+  author: 'Morphling',
+  date: '2024年3月20日',
   category: '技术',
   image: 'https://picsum.photos/800/400?random=4',
   content: `
-    <p>在当今快速发展的技术世界中，学习新的编程语言已经成为程序员的必备技能...</p>
-    <!-- 其他内容 -->
+    <h2>现代前端技术栈概述</h2>
+    <p>在这个博客项目中，我们采用了当下最流行且强大的技术组合。Vue 3 作为核心框架，配合 TailwindCSS 处理样式，使用 TypeScript 确保代码质量，这些技术的组合不仅提供了出色的开发体验，还确保了最终产品的高质量输出。</p>
+
+    <h3>核心技术栈详解</h3>
+    <ul>
+      <li><strong>Vue 3 组合式 API</strong>：使用最新的组合式 API 实现更好的代码组织和逻辑复用，让代码更容易维护和扩展。</li>
+      <li><strong>TailwindCSS</strong>：采用实用优先的 CSS 框架，快速构建美观的用户界面，支持响应式设计和暗色模式。</li>
+      <li><strong>TypeScript</strong>：通过静态类型检查提高代码质量，减少运行时错误。</li>
+      <li><strong>Vite</strong>：享受极速的开发体验和高效的构建过程。</li>
+    </ul>
+
+    <h3>项目特色功能实现</h3>
+    <p>在这个博客项目中，我们实现了许多现代化的特性：</p>
+
+    <h4>1. 响应式设计</h4>
+    <p>使用 TailwindCSS 的响应式类名，轻松实现多设备适配：</p>
+    <pre><code>
+    &lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"&gt;
+      // 响应式卡片布局
+    &lt;/div&gt;
+    </code></pre>
+
+    <h4>2. 暗色模式支持</h4>
+    <p>通过 TailwindCSS 的暗色模式支持，实现了完美的明暗主题切换：</p>
+    <pre><code>
+    &lt;div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"&gt;
+      // 自适应明暗主题的内容
+    &lt;/div&gt;
+    </code></pre>
+
+    <h4>3. 组件化开发</h4>
+    <p>项目中的每个 UI 组件都经过精心设计，确保可复用性：</p>
+    <ul>
+      <li>MButton：统一的按钮组件，支持多种变体</li>
+      <li>MCard：文章卡片组件，用于展示文章列表</li>
+      <li>MBadge：标签组件，用于显示文章分类</li>
+    </ul>
+
+    <h3>性能优化措施</h3>
+    <p>为了确保最佳的用户体验，我们采取了以下优化措施：</p>
+    <ul>
+      <li>图片懒加载：使用 loading="lazy" 属性延迟加载图片</li>
+      <li>组件按需加载：利用 Vue Router 的动态导入特性</li>
+      <li>样式优化：通过 TailwindCSS 的 purge 功能移除未使用的样式</li>
+    </ul>
+
+    <h3>未来展望</h3>
+    <p>这个博客系统还在不断完善中，计划添加的功能包括：</p>
+    <ul>
+      <li>评论系统集成</li>
+      <li>文章搜索功能</li>
+      <li>用户认证系统</li>
+      <li>文章数据统计</li>
+    </ul>
+
+    <p>通过这些技术的组合使用，我们成功打造了一个现代化的博客系统。它不仅具有出色的用户体验，还保持着良好的可维护性和扩展性。</p>
   `
-})
+}
 
 const relatedPosts = ref([
   {

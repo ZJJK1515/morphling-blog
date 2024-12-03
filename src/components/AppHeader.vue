@@ -21,12 +21,14 @@
         >
           {{ item.name }}
         </router-link>
+        <ThemeToggle />
       </nav>
     </div>
   </header>
 </template>
 
 <script setup>
+import ThemeToggle from './ui/theme-toggle.vue'
 const menuItems = [
   { path: '/', name: '首页' },
   { path: '/categories', name: '分类' },

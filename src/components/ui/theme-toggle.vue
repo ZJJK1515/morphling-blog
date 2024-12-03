@@ -14,7 +14,8 @@ import MButton from './m-button.vue'
 const isDark = ref(false)
 
 onMounted(() => {
-  isDark.value = document.documentElement.classList.contains('dark')
+    document.documentElement.classList.remove('dark')
+    localStorage.setItem('theme', 'light')
 })
 
 const toggleTheme = () => {

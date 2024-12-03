@@ -123,6 +123,16 @@ const allPosts = ref([
     date: '2024年3月15日',
     excerpt: '本文将介绍如何使用 Vue 3 的组合式 API 和 TypeScript 来构建类型安全的现代化 Web 应用，包括最佳实践和常见陷阱的避免。'
   },
+  {
+  id: 2,
+  image: 'https://picsum.photos/400/300?random=2',
+  imageAlt: '现代前端技术栈配图',
+  title: '打造完美博客：Vue 3 + TailwindCSS + TypeScript 技术栈详解',
+  author: 'Morphling',
+  authorAvatar: 'https://picsum.photos/50/50?random=2',
+  date: '2024年3月20日',
+  excerpt: '探索这个博客项目使用的现代前端技术栈，包括 Vue 3 组合式API、TailwindCSS 暗色主题支持、TypeScript 类型安全、以及响应式设计的实现细节。'
+}
   // ... 更多文章数据
 ])
 
