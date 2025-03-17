@@ -31,7 +31,7 @@
           v-html="article.content"
         ></div>
 
-        <!-- 文���底部 -->
+        <!-- 文章底部 -->
         <footer class="border-t border-border pt-6 mt-8">
           <div class="flex justify-between items-center">
             <MButton variant="outline" class="flex items-center">
